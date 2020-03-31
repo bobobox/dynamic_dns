@@ -21,8 +21,8 @@ else
     curl "$UPDATE_URL"
     echo "$current_ip" > "$TEMP_FILE"
     if [[ -z $last_ip ]]; then
-        echo "$(date) - IPv4 address changed. Old IP: ${last_ip} New IP: ${current_ip}" >> "$LOG_FILE"
-    else
         echo "$(date) - No old IPv4 address found. New IP: ${current_ip}" >> "$LOG_FILE"
+    else
+        echo "$(date) - IPv4 address changed. Old IP: ${last_ip} New IP: ${current_ip}" >> "$LOG_FILE"
     fi
 fi
