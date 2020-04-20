@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Checks for public IP(v4) changes and curls dynamic DNS udpate URL if necessary.
+# Checks for public IP(v4) changes and curls dynamic DNS update URL if necessary.
 # Provide update URL as first argument.
 
 set -e
